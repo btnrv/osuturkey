@@ -5,12 +5,25 @@
   font-family: "Montserrat", sans-serif;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #310000;
+}
+
 body {
   width: 100vw;
   background-image: url(/public/background.png);
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 #root {
