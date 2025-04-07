@@ -11,14 +11,10 @@ html, body {
 }
 
 .container {
-    background-image: url("/public/background_old.png");  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/public/background_otr25.png");  
 }
   
   .title {
