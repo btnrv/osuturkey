@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import "../styles/glitch.scss"
 
 interface MainHeaderProps {
     bgColor: string;
@@ -28,9 +29,12 @@ export function OTR25Header({ bgColor }: MainHeaderProps) {
         </span>
         </div>
 
-        <div style={{ alignItems: "left", display: "flex", gap: "30px", marginLeft: "20px", fontSize: "18px" }}>
-            <Link to="/" style={{ color: "white", fontWeight: "normal" }}>Ana Sayfa</Link>
+        <div style={{ alignItems: "left", display: "flex", gap: "35px", marginLeft: "20px", fontSize: "18px" }}>
+            <Link className="glitch" data-text="ana sayfa" to="/" style={{ color: "white", fontWeight: "normal" }}>
+            Ana Sayfa
+            </Link>
             <Link
+                className="glitch" data-text="main sheet"
                 to="https://docs.google.com/spreadsheets/d/1aIveR439mkI0bxa2g0nUU1nWu9Q2qLKt4ktyOctVYnk/edit?gid=1534856340#gid=1534856340"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -39,6 +43,7 @@ export function OTR25Header({ bgColor }: MainHeaderProps) {
                 Main Sheet
             </Link>
             <Link
+                className="glitch" data-text="twitch" 
                 to="https://www.twitch.tv/osutrlive"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -47,6 +52,7 @@ export function OTR25Header({ bgColor }: MainHeaderProps) {
                 Twitch
             </Link>
             <Link
+                className="glitch" data-text="challonge" 
                 to="https://challonge.com/tr/osuturkiye2023"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,9 +60,19 @@ export function OTR25Header({ bgColor }: MainHeaderProps) {
             >
                 Challonge
             </Link>
-            <Link to="/OTR25/players" style={{ color: location.pathname === "/OTR25/players" ? "white" : "#ccc", fontWeight: location.pathname === "/OTR25/players" ? "bold" : "normal" }}>Oyuncular</Link>
-            <Link to="/OTR25/matches" style={{ color: location.pathname === "/OTR25/matches" ? "white" : "#ccc",  fontWeight: location.pathname === "/OTR25/matches" ? "bold" : "normal" }}>Maçlar</Link>
-            
+            <Link 
+                className="glitch" data-text="oyuncular" 
+                to="/OTR25/players" style={{ color: location.pathname === "/OTR25/players" ? "white" : "#ccc", fontWeight: location.pathname === "/OTR25/players" ? "bold" : "normal" }}>
+            Oyuncular
+            </Link>
+            <Link 
+                className="glitch" data-text="maçlar"
+                to="/OTR25/matches" style={{ color: location.pathname === "/OTR25/matches" ? "white" : "#ccc",  fontWeight: location.pathname === "/OTR25/matches" ? "bold" : "normal" }}>
+            Maçlar
+            </Link>
+            <div className="glitch" data-text="Glitch">
+                Glitch
+            </div>
         </div>
     </header>
     );
