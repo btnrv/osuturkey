@@ -11,14 +11,88 @@ html, body {
 }
 
 .container {
-  height: 100vh;
-  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../public/otr25_bg.png");
+  background-size: 100%;
   background-position: center;
-  background-image: url("/public/background_otr25.png");  
+
 }
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*img {
+  max-height: 400px;
+}
+
+.shifted-rectangle {
+  display: inline-block;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+*li {
+  padding: 5px 0 5px;
+}
+*section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 40%;
+  padding: 10px 10px;
+  margin-top: 20px;
   
-  .title {
-    font-size: 2rem;
-    color: blue;
-  }
+  background-color: #111;
+  border: 2px solid #804EC8;
+  border-radius: 20px;
   
+  color: #666;
+}
+
+*h1 {
+  word-spacing: .1em;
+  font-size: 30px;
+  font-weight: 650;
+  margin-bottom: 8px;
+  color: #fff;
+  font-style: italic;
+}
+*h2 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+}
+*h3 {
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+}
+*p {
+  word-spacing: .065em;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+.accent {
+  color: #804EC8;
+  font-weight: bold;
+}
