@@ -18,18 +18,6 @@ export function OTR25Header({ bgColor }: MainHeaderProps) {
                         padding: "10px",
                     }}
                 />
-                <span
-                    style={{
-                        fontWeight: "bold",
-                        fontSize: "28px",
-                        padding: "0px 8px",
-                        background: "linear-gradient(to right, #0077FF, #FF2491)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
-                    }}
-                >
-                    osu!türkiye Open 2025
-                </span>
             </div>
 
             <div
@@ -37,17 +25,22 @@ export function OTR25Header({ bgColor }: MainHeaderProps) {
                     display: "flex",
                     alignItems: "stretch",
                     justifyContent: "flex-start",
-                    marginLeft: "20px",
                     fontSize: "18px",
                     height: "100%",
                 }}
             >
                 {[
-                    { text: "Ana Sayfa", to: "/", color: "white" },
+                    { text: "Ana Sayfa", to: "/OTR25", color: "white" },
+                    {
+                        text: "Kurallar",
+                        to: "/OTR25/rules",
+                        color: "#fff",
+                        external: false,
+                    },
                     {
                         text: "Main Sheet",
                         to: "https://docs.google.com/spreadsheets/d/1aIveR439mkI0bxa2g0nUU1nWu9Q2qLKt4ktyOctVYnk/edit?gid=1534856340#gid=1534856340",
-                        color: "#fff",
+                        color: "#0F9D58",
                         external: true,
                     },
                     {

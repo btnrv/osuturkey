@@ -2482,6 +2482,13 @@ react-router@6.11.2:
   dependencies:
     "@remix-run/router" "1.6.2"
 
+react-twitch-embed-video@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-twitch-embed-video/-/react-twitch-embed-video-3.1.0.tgz#7bab254b911b30b62315d2e5cadf4731498f1550"
+  integrity sha512-i7qJpdKZBVpj1d4WaYkMIEWYlLNNNJM/vylUG1vrgYwdsiDq3syoCYLAolL0TbEBZiTVnij7AVotpYOuO1rg2A==
+  dependencies:
+    window-or-global "^1.0.1"
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
@@ -3014,6 +3021,11 @@ wide-align@^1.1.0:
   integrity sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==
   dependencies:
     string-width "^1.0.2 || 2 || 3 || 4"
+
+window-or-global@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/window-or-global/-/window-or-global-1.0.1.tgz#dbe45ba2a291aabc56d62cf66c45b7fa322946de"
+  integrity sha512-tE12J/NenOv4xdVobD+AD3fT06T4KNqnzRhkv5nBIu7K+pvOH2oLCEgYP+i+5mF2jtI6FEADheOdZkA8YWET9w==
 
 word-wrap@^1.2.3:
   version "1.2.3"

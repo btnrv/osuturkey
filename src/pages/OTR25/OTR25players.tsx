@@ -1,4 +1,5 @@
 import { OTR25Header } from "../../assets/otr25Header";
+import "../../styles/otr25.scss";
 
 export function OTR25players() {
     return (

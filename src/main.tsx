@@ -6,6 +6,7 @@ import { ValidatePage } from "./pages/ValidatePage";
 import { OTR25 } from "./pages/OTR25/OTR25";
 import { OTR25players } from "./pages/OTR25/OTR25players";
 import { OTR25matches } from "./pages/OTR25/OTR25matches";
+import { OTR25rules }from "./pages/OTR25/OTR25rules";
 import { MainHeader } from "./assets/mainHeader";
 import "./styles/index.scss";
 
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <Route path="/OTR25" element={<OTR25 />} />
       <Route path="/OTR25/players" element={<OTR25players />} />
       <Route path="/OTR25/matches" element={<OTR25matches />} />
+      <Route path="/OTR25/rules" element={<OTR25rules />} />
     </Routes>
   </BrowserRouter>
 );
