@@ -28,6 +28,13 @@ export function OTR25() {
             </p>
           </div>
           <TwitchStream channel="osutrlive" />
+          <div className="title-container">
+            <h1 style={{marginTop: "200px"}}>Görevli Kayıtları</h1>
+            <br/>
+          </div>
+          <div className="flex-container" style={{ justifyContent: "center", alignContent: "center",}}>
+            <iframe style={{width: "60%", height: "1200px", border: "0", borderRadius: "20px"}} src="https://docs.google.com/forms/d/e/1FAIpQLSeHhtRXQvqGlR8ODsvSQZtZH3XUgMucoeLi9ToMOkNbAcfAUA/viewform"></iframe>    
+          </div>
         </div>
       </div>
     </div>
