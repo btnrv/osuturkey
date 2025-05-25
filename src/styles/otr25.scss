@@ -9,15 +9,48 @@
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
+  background-image: url("/public/BG_CRT_Pattern.png");
+}
+.text-logo {
+  width: 100%;
+  height: 50px;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/public/otr25_logo_text.png");
+}
+.line-logo {
+  max-height: 276px;
+  min-height: 200px;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/public/otr25_logo_lines.png");
 }
 
+.glow-full {
+  height: 100%;
+  width: 100%;
+  background-image: url("/public/Glow_Full_Crop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -1700px;
+}
+.side-frame {
+  height: 100%;
+  width: 100%;
+  background-image: url("/public/Side_Frame_Pattern.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  background-position: center;
+}
 .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../public/otr25_bg.png");
+  background-image: url("/public/otr25_bg.png");
   background-size: 100%;
   background-position: center;
 }

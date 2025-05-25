@@ -7,13 +7,9 @@ export function OTR25() {
     <div>
     <OTR25Header bgColor="black" />
     <div className="container">
-      <div style={{backgroundImage: "url(/Side_Frame_Pattern.png)", backgroundSize: "100%"}}>
-        <div style={{backgroundImage: "url(/Glow_Full_Crop.png)", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPositionY: "-1700px"}}>
-          <div className="image-container">
-            <img style={{height: "140px", margin: "100px"}} src="../public/otr25_logo_lines.png" alt="" />
-            <div className="shifted-rectangle">
-            </div>
-          </div>
+      <div className="side-frame">
+        <div className="line-logo"></div>
+          <TwitchStream channel="osutrlive" />
           <div className="title-container">
             <h1>osu!türkiye Open 2025</h1>
             <br/>
@@ -27,9 +23,8 @@ export function OTR25() {
               Türkiye’nin en iyi osu! oyuncularını kıyasıya mücadele ederken izlemek için hazır olun!
             </p>
           </div>
-          <TwitchStream channel="osutrlive" />
           <div className="title-container">
-            <h1 style={{marginTop: "200px"}}>Görevli Kayıtları</h1>
+            <h1 style={{marginTop: "100px"}}>Görevli Kayıtları</h1>
             <br/>
           </div>
           <div className="flex-container" style={{ justifyContent: "center", alignContent: "center",}}>
@@ -37,7 +32,6 @@ export function OTR25() {
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }
